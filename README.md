@@ -21,6 +21,8 @@ Uma aplicação web moderna para conversão de moedas em tempo real com interfac
 - Consumo em baixa latência de APIs
 - Estados dinâmicos para interação rápida e temporária de um usuário
 - Media Queries para melhor experiência em dispositivos móveis
+- Componentização de elementos
+- Estados de carregamento com animações e feedback visual
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -52,7 +54,7 @@ Antes de começar, certifique-se de ter instalado:
 ### 1. Clonar o Repositório
 
 ```bash
-git clone https://github.com/seu-usuario/coinshift.git
+git clone https://github.com/buyscode/coinshift.git
 cd coinshift
 ```
 
