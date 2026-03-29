@@ -16,6 +16,12 @@ Uma aplicação web moderna para conversão de moedas em tempo real com interfac
 - 📱 Compatibilidade com dispositivos móveis
 - 🌐 Integração com Exchange Rate API
 
+## O que aprendi desenvolvendo o projeto?
+
+- Consumo em baixa latência de APIs
+- Estados dinâmicos para interação rápida e temporária de um usuário
+- Media Queries para melhor experiência em dispositivos móveis
+
 ## 🛠️ Tecnologias Utilizadas
 
 - **Frontend Framework**: React
@@ -25,15 +31,6 @@ Uma aplicação web moderna para conversão de moedas em tempo real com interfac
 - **API**: Exchange Rate API (v6.exchangerate-api.com)
 - **Linting**: ESLint com TypeScript Support
 - **Package Manager**: npm
-
-### Dependências Principais
-
-```json
-{
-  "react": "^19.2.4",
-  "react-dom": "^19.2.4"
-}
-```
 
 ### Dependências de Desenvolvimento
 
@@ -144,19 +141,6 @@ coinshift/
 
 Componente que renderiza o cabeçalho da aplicação com o título "CoinShift". Possui styling bicolor para destacar visualmente a marca.
 
-```tsx
-export default function Header () {
-  return (
-    <header className="header">
-      <h1>
-        <span className="header-title-first">Coin</span>
-        <span className="header-title-second">Shift</span>
-      </h1>
-    </header>
-  )
-}
-```
-
 ### Card (Currency Converter)
 **Arquivo**: [src/components/Card.tsx](src/components/Card.tsx)
 
@@ -175,16 +159,6 @@ Componente principal que contém toda a lógica de conversão de moedas. Gerenci
 - Estado de carregamento com spinner
 - Tratamento de erros
 - Botão convertedor com feedback visual
-
-#### Estado (useState)
-
-```typescript
-const [fromCurrency, setFromCurrency] = useState<string>("USD")
-const [toCurrency, setToCurrency] = useState<string>("EUR")
-const [loading, setLoading] = useState<boolean>(false)
-const [amount, setAmount] = useState<number>(0)
-const [finalValue, setFinalValue] = useState<number>(0)
-```
 
 #### Função handleClick
 
@@ -318,7 +292,6 @@ npm run dev -- --port 3001
 - [ ] Suporte offline com cache
 - [ ] Gráficos de taxas históricas
 - [ ] Suporte multi-idioma
-- [ ] Mobile app nativa (React Native)
 
 ## 📝 Licença
 
@@ -326,17 +299,7 @@ Este projeto está sob licença privada. Todos os direitos reservados.
 
 ## 👨‍💻 Autor
 
-Desenvolvido por [Seu Nome/Organização]
-
-## 🤝 Contribuições
-
-Se deseja contribuir para este projeto, por favor:
-
-1. Fork o repositório
-2. Crie uma branch para sua feature (`git checkout -b feature/NovaFeature`)
-3. Commit suas mudanças (`git commit -m 'Adiciona NovaFeature'`)
-4. Push para a branch (`git push origin feature/NovaFeature`)
-5. Abra um Pull Request
+Desenvolvido por Guilherme Buys (BuysCode)
 
 ## 📞 Suporte
 
@@ -344,6 +307,6 @@ Para dúvidas ou problemas, abra uma issue no repositório.
 
 ---
 
-**Versão**: 0.0.0  
+**Versão**: 0.1 
 **Último Update**: Março de 2026  
 **Status**: Em Desenvolvimento ✨
