@@ -1,7 +1,15 @@
+import Header from "./components/Header";
+
+import './App.css';
+import Card from "./components/Card";
+
 export default function App () {
   return (
     <div>
-      <h1>Hello World</h1>
+      <Header />
+      <main>
+        <Card />
+      </main>
     </div>
   )
 }
